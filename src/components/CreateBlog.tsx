@@ -125,7 +125,7 @@ export default function CreateBlog() {
           <Button 
             onClick={handleSubmit}
             disabled={mutation.isPending || !title.trim() || !content.trim()}
-            className="flex-1"
+            className="flex-1 text-white border bg-black"
           >
             {mutation.isPending ? "Publishing..." : "Publish"}
           </Button>
